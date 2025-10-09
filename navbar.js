@@ -1,4 +1,4 @@
-// /js/navbar.js
+// navbar.js
 
 class Navbar {
     constructor() {

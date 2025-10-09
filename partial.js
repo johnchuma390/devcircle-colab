@@ -1,4 +1,4 @@
-// /js/partial.js
+// partial.js
 
 // Utility function to load HTML partials dynamically
 class PartialLoader {
