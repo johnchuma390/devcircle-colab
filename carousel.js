@@ -1,4 +1,4 @@
-// /js/carousel.js
+// carousel.js
 
 class Carousel {
     constructor(containerId, options = {}) {

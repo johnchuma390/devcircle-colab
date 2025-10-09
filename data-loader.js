@@ -1,4 +1,4 @@
-// /js/data-loader.js
+// data-loader.js
 
 class DataLoader {
     constructor() {
