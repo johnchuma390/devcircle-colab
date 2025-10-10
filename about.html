@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • Devcircle & FAQ</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar (sticky) -->
+  <header id="site-navbar" class="site-navbar" role="banner">
+    <nav class="container" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Go to top">Devcircle</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle menu</span>
+        ☰
+      </button>
+      <ul id="primary-menu" class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero / About Section -->
+    <section id="about" class="section about-section">
+      <div class="container grid-2">
+        <div>
+          <h1>About <span class="accent">Devcircle</span></h1>
+          <p class="lead">
+            We help businesses ship fast with modern web development,
+            data-driven digital marketing, and SEO that actually moves the needle.
+          </p>
+          <ul class="bullets">
+            <li>Full-stack web apps and beautiful marketing sites</li>
+            <li>ROI-focused campaigns with clear reporting</li>
+            <li>Technical SEO and performance optimization</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn" href="#contact">Start a project</a>
+            <a class="btn btn-ghost" href="#faq">Read FAQs</a>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3>Quick facts</h3>
+          <dl class="facts">
+            <div><dt>Founded</dt><dd>2025</dd></div>
+            <div><dt>HQ</dt><dd>Remote-first</dd></div>
+            <div><dt>Focus</dt><dd>Web, Marketing, SEO</dd></div>
+            <div><dt>Response time</dt><dd>&lt; 24h</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-list" role="list">
+          <article class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="a1" id="q1">
+              What services do you offer?
+              <span class="chev" aria-hidden="true">▸</span>
+            </button>
+            <div class="faq-answer" id="a1" role="region" aria-labelledby="q1">
+              We offer web development, digital marketing, and SEO optimization.
+            </div>
+          </article>
+
+          <article class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="a2" id="q2">
+              How can I contact support?
+              <span class="chev" aria-hidden="true">▸</span>
+            </button>
+            <div class="faq-answer" id="a2" role="region" aria-labelledby="q2">
+              You can contact support through the contact form below or email us at
+              <a href="mailto:support@example.com">support@example.com</a>.
+            </div>
+          </article>
+
+          <!-- Add more FAQ items here by copying the article block -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="/submit-form" method="POST" novalidate>
+          <div class="field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="field">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2025 Your Company. All rights reserved.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="about.js"></script>
+</body>
+</html>
