@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - DevCircle | Our Web Design & Development Work</title>
+  <meta name="description" content="Explore DevCircle's portfolio of successful web design, development, and digital marketing projects. See how we've helped businesses transform their digital presence." />
+  <meta name="keywords" content="DevCircle portfolio, web design projects, website examples, Kenya web design, digital marketing case studies" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portfolio - DevCircle" />
+  <meta property="og:description" content="Explore our portfolio of successful web design and digital marketing projects" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://devcircle.co.ke/pages/portfolio.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS (note the ../ because this file is in /pages/) -->
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+<body>
+  <!-- Shared Header -->
+  <div data-include="../partials/header.html"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1>Our Portfolio</h1>
+          <p>Discover the successful projects we've delivered for clients across various industries. From e-commerce platforms to corporate websites, see how we transform digital visions into reality.</p>
+        </div>
+
+        <!-- Filters injected by data-loader.js -->
+        <div id="portfolioFilters" style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:3rem;"></div>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="section section-light">
+      <div class="container">
+        <div id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <!-- Modal (populated by JS) -->
+    <div class="modal-backdrop" id="portfolioModal" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="max-width: 900px;">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalTitle">Project Title</h3>
+          <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-footer">
+          <button class="btn btn-outline" id="modalClose2">Close</button>
+          <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Project Results That Speak for Themselves</h2>
+          <p>Our success is measured by the success of our clients. Here are some key metrics from our recent projects.</p>
+        </div>
+
+        <div class="grid grid-4" style="text-align:center;">
+          <div class="card">
+            <div class="card-body">
+              <div style="font-size:3rem;font-weight:bold;color:var(--brand-blue);margin-bottom:1rem;">200+</div>
+              <h4>Projects Completed</h4>
+              <p>Successfully delivered projects across various industries and business sizes.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div style="font-size:3rem;font-weight:bold;color:var(--brand-yellow);margin-bottom:1rem;">98%</div>
+              <h4>Client Satisfaction</h4>
+              <p>Our clients love working with us and often return for additional projects.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div style="font-size:3rem;font-weight:bold;color:var(--success);margin-bottom:1rem;">300%</div>
+              <h4>Average ROI Increase</h4>
+              <p>Our clients see significant improvements in their online performance and ROI.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div style="font-size:3rem;font-weight:bold;color:var(--info);margin-bottom:1rem;">24/7</div>
+              <h4>Support Available</h4>
+              <p>We provide round-the-clock support to ensure your website stays online and optimized.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Create Your Success Story?</h2>
+          <p>Join our portfolio of successful projects. Let's discuss how we can transform your digital presence and drive real business results.</p>
+          <div class="cta-actions">
+            <a href="https://wa.me/254743750237" class="btn btn-accent btn-large">Start Your Project</a>
+            <a href="contact.html" class="btn btn-secondary btn-large">Get Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <div data-include="../partials/footer.html"></div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18,15 12,9 6,15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts (order matters) -->
+  <script src="../js/partial.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/carousel.js"></script> <!-- optional if you add a project gallery carousel -->
+  <script src="../js/data-loader.js"></script>
+</body>
+</html>
